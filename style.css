@@ -21,6 +21,7 @@ html {
 }
 
 body {
+    
     background-color: var(--main-bg-color);
     color: var(--text-color);
 }
@@ -34,7 +35,7 @@ body {
     align-items: center;
     padding: 1em 5%;
     background-color: var(--header-bg-color);
-    z-index: 1000;
+    z-index: 1;
 }
 
 .header__brand {
@@ -120,8 +121,8 @@ section:nth-of-type(even) {
 
 .project-card img{
     width: 100%;
-    object-fit: contain;
-    transition: .4s ease-out
+
+
 }
 
 .projects-container{
@@ -132,11 +133,15 @@ section:nth-of-type(even) {
 }
 
 .project-card {
-    position: relative;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
+    background: rgba(255, 255, 255, 0.11);
     border-radius: 2em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
 }
 
 
@@ -147,4 +152,11 @@ section:nth-of-type(even) {
     border: 1px solid transparent;
     border-radius: 20%;
     background-color: var(--alternative-bg-color);
+}
+
+.footer {
+    padding: 1em;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    text-align: center;
 }
