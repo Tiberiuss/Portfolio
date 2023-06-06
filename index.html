@@ -11,85 +11,110 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="header__brand">Tiberius</a>
-        <nav class="header__nav">
-            <a href="#about" class="header__link">About</a>
-            <a href="#projects" class="header__link">Projects</a>
-        </nav>
-    </header>
-    <main>  
-        <section id="about" class="section">
-            <div class="about-main">
-                <div>
-                    <h1>Hi, I'm <span class="accent">Tiberius</span></h1>
-                    <h2 class="accent">Software Engineer</h2>                   
-                </div>
-                <p>Welcome to my software engineer portfolio! Here you will find a collection of my work as a software engineer, showcasing my skills, expertise, and passion for developing high-quality software. </p>
-                <div class="social-btns">
-                    <a href="https://github.com/Tiberiuss"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://www.linkedin.com/in/tiberius-roman-678336158/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="projects" class="section">
-            <h1 class="text-center">Latest <span class="accent">Projects</span></h1>
-            <div class="projects-container">
-                <div class="project-card">
-                    <img src="./img/Qwizer.png" alt="">
-                    <div class="project-card-content">
-                        <h3>Qwizer</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, velit in? In sunt ad, tenetur ex optio assumenda? Exercitationem obcaecati dignissimos aliquid dolorum. Eaque commodi quo fugiat, explicabo earum possimus?</p>
-                        <a href="https://github.com/Qwizer-UCM/Qwizer" class="btn-link"><i class="fa-solid fa-link"></i></a>
+    <input type="checkbox" id="theme-switch" class="theme-switch" checked>
+    <div class="root">
+        <header class="header">
+            <a href="#" class="header__brand">Tiberius</a>
+            <nav class="header__nav">
+                <label for="theme-switch" class="switch-label"></label>
+                <a href="#about" class="header__link">About</a>
+                <a href="#projects" class="header__link">Projects</a>
+            </nav>
+        </header>
+        <main>  
+            <section id="about" class="section">
+                <i class="fa-solid fa-sun-bright"></i>
+                <img src="img/praise.png" alt="" srcset="">
+                <div class="about-main">
+                    <div>
+                        <h1>Hi, I'm <span class="accent">Tiberius</span></h1>
+                        <h2 class="accent">Software Engineer</h2>                   
+                    </div>
+                    <p>Welcome to my software engineer portfolio! Here you will find a collection of my work as a software engineer, showcasing my skills, expertise, and passion for developing high-quality software. </p>
+                    <div class="social-btns">
+                        <a href="https://github.com/Tiberiuss"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tiberius-roman-678336158/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="./img/Bacowine.png" alt="">
-                    <div class="project-card-content">
-                        <h3>BacoWine</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, velit in? In sunt ad, tenetur ex optio assumenda? Exercitationem obcaecati dignissimos aliquid dolorum. Eaque commodi quo fugiat, explicabo earum possimus?</p>
-                        <a href="https://github.com/Bacowine/BacoWine" class="btn-link"><i class="fa-solid fa-link"></i></a>
+            </section>
+    
+    
+            <section id="projects" class="section">
+                <h1 class="text-center">Latest <span class="accent">Projects</span></h1>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="./img/Qwizer.png" alt="">
+                        <div class="project-card-content">
+                            <div class="project-card-labels">
+                                <h3>Qwizer</h3>
+                                <img src="img/django-logo-negative.png" alt="" srcset="">
+                                <img src="img/JavaScript-logo.png" alt="" srcset="">
+                            </div>
+                            <p>Qwizer is a user-friendly PWA for creating and conducting quizzes. Participants can access quizzes on any device without installing additional software. It also works offline and generates a QR code for syncing data when the internet connection is restored.</p>
+                            <a href="https://github.com/Qwizer-UCM/Qwizer" class="project-card-btn"><i class="fa-brands fa-github"></i> Github repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./img/Bacowine.png" alt="">
+                        <div class="project-card-content">
+                            <div class="project-card-labels">
+                                <h3>BacoWine</h3>
+                                <img src="img/JavaScript-logo.png" alt="" srcset="">
+                            </div>
+                            <p>Bacowine allows users to view and organize information about wines and wine cellars oriented to future wine tasting. This intuitive application provides a user-friendly platform for wine enthusiasts to keep track of their wine collections and explore detailed information about different wines and their respective cellar locations. Users can easily access and view wine details, including names, vintages, vineyards, and regions. </p>
+                            <a href="https://github.com/Bacowine/BacoWine" class="project-card-btn"><i class="fa-brands fa-github"></i> Github repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./img/IngenieriaConocimiento.png" alt="">
+                        <div class="project-card-content">
+                            <div class="project-card-labels">
+                                <h3>Machine Learning Algorithms</h3>
+                                <img src="img/JavaScript-logo.png" alt="" srcset="">
+                            </div>
+                            <p>The webpage is an implementation of several algorithms commonly used in different fields. It includes the A* algorithm, ID3 algorithm, Bayes algorithm, Lloyd's algorithm, and k-means algorithm. The A* webpage is designed with a captivating videogame aesthetic inspired by a dungeon environment.</p>
+                            <a href="https://tiberiuss.github.io/IC/" class="project-card-btn"><i class="fa-brands fa-github"></i> Github repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./img/Cloud.svg" alt="">
+                        <div class="project-card-content">
+                            <div class="project-card-labels">
+                                <h3>Covid-19 analysis</h3>
+                                <img src="img/python-logo-only.png" alt="" srcset="">
+                            </div>
+                            <p>COVID-19 dataset analysis using PySpark leverages a dataset sourced from Kaggle, a popular platform for data science and machine learning. This analysis focuses on exploring and deriving insights from the provided COVID-19 dataset using PySpark, a powerful Python library for distributed data processing.</p>
+                            <a href="https://tiberiuss.github.io/CLO/" class="project-card-btn"><i class="fa-brands fa-github"></i> Github repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./img/Traffic Simulator.png" alt="">
+                        <div class="project-card-content">
+                            <div class="project-card-labels">
+                                <h3>Traffic Simulator</h3>
+                                <img src="img/Java.jpg" alt="" srcset="">
+                            </div>
+                            <p>The Traffic Simulator Java app is a software application created for simulating and analyzing traffic scenarios. It offers a platform to model and explore different aspects of traffic flow, including the ability to simulate various events such as weather changes. Additionally, the app incorporates pollution restrictions that can limit car speeds, providing a realistic representation of traffic dynamics in different environmental conditions.</p>
+                            <a href="https://github.com/Tiberiuss/TP2-TrafficSimulator" class="project-card-btn"><i class="fa-brands fa-github"></i> Github repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./img/Alien Invaders.png" alt="">
+                        <div class="project-card-content">
+                            <div class="project-card-labels">
+                                <h3>Alien Invaders</h3>
+                                <img src="img/Java.jpg" alt="" srcset="">
+                            </div>
+                            <p>The Console Alien Invaders Java app is a simple yet exciting game that brings back the nostalgic experience of classic arcade-style alien invasion games. It is designed to be played in a console environment, providing a retro gaming experience for Java enthusiasts.</p>
+                            <a href="https://github.com/Tiberiuss/TP1-AlienInvaders" class="project-card-btn"><i class="fa-brands fa-github"></i> Github repo</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="./img/IngenieriaConocimiento.png" alt="">
-                    <div class="project-card-content">
-                        <h3>Machine Learning Algorithms</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, velit in? In sunt ad, tenetur ex optio assumenda? Exercitationem obcaecati dignissimos aliquid dolorum. Eaque commodi quo fugiat, explicabo earum possimus?</p>
-                        <a href="https://tiberiuss.github.io/IC/" class="btn-link"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="./img/Cloud.svg" alt="">
-                    <div class="project-card-content">
-                        <h3>Covid-19 analysis</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, velit in? In sunt ad, tenetur ex optio assumenda? Exercitationem obcaecati dignissimos aliquid dolorum. Eaque commodi quo fugiat, explicabo earum possimus?</p>
-                        <a href="https://tiberiuss.github.io/CLO/" class="btn-link"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="./img/Traffic Simulator.png" alt="">
-                    <div class="project-card-content">
-                        <h3>Traffic Simulator</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, velit in? In sunt ad, tenetur ex optio assumenda? Exercitationem obcaecati dignissimos aliquid dolorum. Eaque commodi quo fugiat, explicabo earum possimus?</p>
-                        <a href="https://github.com/Tiberiuss/TP2-TrafficSimulator" class="btn-link"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="./img/Alien Invaders.png" alt="">
-                    <div class="project-card-content">
-                        <h3>Alien Invaders</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, velit in? In sunt ad, tenetur ex optio assumenda? Exercitationem obcaecati dignissimos aliquid dolorum. Eaque commodi quo fugiat, explicabo earum possimus?</p>
-                        <a href="https://github.com/Tiberiuss/TP1-AlienInvaders" class="btn-link"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        © Copyright 2023 Tiberiuss
-    </footer>
+            </section>
+        </main>
+        <footer class="footer">
+            © Copyright 2023 Tiberiuss
+        </footer>
+    </div>
 </body>
 </html>
